@@ -30,11 +30,13 @@
       <%= render 'review' %>
   </div>
 
+<% if current_user %>
   <%= form_for [@product, Review.new] do |f| %>
     <%= f.select :rating, [1, 2, 3, 4, 5] %>
     <%= f.text_area :description %>
     <%= f.submit %>
   <% end %>
+<% end %>
 
   </article>
 </section>
