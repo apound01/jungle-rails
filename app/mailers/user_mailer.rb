@@ -6,6 +6,6 @@ class UserMailer < ApplicationMailer
    @line_items = @order.line_items
 
 
-   mail(to: order.email, subject: "Order Confirmation #{order.id}")
+   mail(to: 'amypound23@gmail.com', subject: "Order Confirmation #{order.id}")
  end
 end
